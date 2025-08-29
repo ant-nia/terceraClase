@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Coral+Pixels&family=Doto:wght@100..900&family=Imperial+Script&family=Jacquarda+Bastarda+9&family=Tangerine:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: lightblue;
+  color: #00;
+  font-family: Helvetica, sans-serif;
+}
+
+h1{
+  font-size: calc(3rem + 5vw);
+}
+
+
+a[href$=".pdf"]{
+  color: whitesmoke  ;
+}
+
+a{
+  color: #00;
+  text-decoration: none;
+  transition: all ease .5s;
+}
+
+a:hover{
+  color:#4682B4;
+  text-decoration: underline;
+  transition: all ease .5s;
+}
+
+a:hover:after{
+  content:"🫢";
+}
+
+#bloque{
+  margin: 5rem;
+  padding: 1rem;
+  background: rgba(255,255,255,.2);
+  border-radius: 1rem;
+  box-shadow: 0 0 5px ;
+  color: 000;
+}
+
+.lana {
+  font-family: "Jacquarda Bastarda 9", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  ;
+}
+
+
+h1{
+  font-family: "Jacquarda Bastarda 9" , serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ span.lana {
+  font-family: "Doto" , serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 140%;
+}
+
+#bloque {
+    position: absolute;
+    left: 50%; /* esta parte dew aca le da las instrucciones de donde tiene q ponerse*/
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    /*width: calc(80% - 4cm) y ponerle 2cm abajo en padding --> le estoy dando la pega de q me calcule solo el resto*/
+    padding: 1%; /*el ancho real no es 80%, sino del 82% pq el pading le suma 1% a cada lado. si quiero q el bloque sea 80% justo tendría q ponerle en width 78%*/
+    margin: auto;
+
+    background: rgba(255, 255, 255, 0.9); /*el 0.9 es la opacidad*/
+    border-radius: 1rem;
+    box-shadow: 0 0 30px white;
+    z-index: 9999;
+}
+
+
+/*
+canvas {
+  display: block;
+}
+
+*/
